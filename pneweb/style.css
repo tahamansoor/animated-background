@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+body {
+    background-color: cornflowerblue;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.486), rgba(255, 255, 255, 0.2));
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-left: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+a.active,
+a:hover {
+    color: rgba(0, 0, 0, 0.3);
+    background: #fff;
+    transition: .5s;
+}
+
+.content {
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    padding-left: 25rem;
+}
+
+.content h4 {
+    font-size: 100px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content p {
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.social-menu social i {
+    color: white;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    float: right;
+    font-size: 15px;
+    border: white 1px solid;
+    padding: 10px;
+    margin: 2%;
+    border-radius: 50%;
+}
+
+.social-menu {}
